@@ -3,7 +3,6 @@ public class SortingQ1 {
     public static void Sorting(int[] arr){
         int n = arr.length;
         for(int i=0;i<n-1;i++){
-            if(i==2) return;
             for(int j=0;j<n-1;j++){
                 if(arr[j]==0 && arr[j+1]!=0 ){
                     //swap
