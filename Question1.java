@@ -1,6 +1,10 @@
 public class Question1 {
     public static void Sort(int[] arr){
         int n = arr.length;
+        if(n<=1) {//handling corner or edge cases
+            System.out.println("Given array is too small to be sort");
+            return;
+        }
         int x = -1;
         int y = -1;
         for(int i=1;i<n;i++){
@@ -26,7 +30,7 @@ public class Question1 {
     }
     public static void main(String[] args){
         //Given an array where all its elements are sorted in increasing order except two swapped elemetns, sort it in liner time. Assume there are no duplicates in the array
-        int[] arr = {3,8,6,7,5,9,10};
+        int[] arr = {1,2,9,4,5,6,7,8,3};
         System.out.println("Given array - ");
         for(int i=0;i<arr.length;i++){
             System.out.print(" "+arr[i]);
